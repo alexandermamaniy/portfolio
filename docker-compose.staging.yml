@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  nginx:
+    image: akey96/alexandermamaniy_nginx:latest
+    command: >
+      sh -c "
+          nginx -g 'daemon off;'"
+    restart: always
+    networks:
+      - network_main_net
+    ports:
+      - "80:80"
+networks:
+  network_main_net:
+    name: network_main_net

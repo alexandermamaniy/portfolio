@@ -24,7 +24,7 @@ import { ProductpageComponent } from "./examples/productpage/productpage.compone
 import { ResetpageComponent } from "./examples/resetpage/resetpage.component";
 
 const routes: Routes = [
-  { path: "", redirectTo: "presentation", pathMatch: "full" },
+  { path: "", redirectTo: "sections", pathMatch: "full" },
   { path: "components", component: IndexComponent },
   { path: "presentation", component: PresentationComponent },
   { path: "sections", component: SectionsComponent },

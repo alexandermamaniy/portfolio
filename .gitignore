@@ -1,3 +1,5 @@
+certbot/
+
 # Angular build artifacts
 /dist
 /tmp

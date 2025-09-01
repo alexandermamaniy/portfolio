@@ -11,11 +11,15 @@ services:
       - network_main_net
     ports:
       - "80:80"
+      - "443:443"
+    volumes:
+      - ./certbot/www/:/var/www/certbot/:ro
+      - ./certbot/conf/:/etc/letsencrypt/:ro
   certbot:
     image: certbot/certbot:latest
     volumes:
       - ./certbot/www/:/var/www/certbot/:rw
-      - ./certbot/conf/:/etc/letsencrypt/:rw\
+      - ./certbot/conf/:/etc/letsencrypt/:rw
     networks:
       - network_main_net
     depends_on:

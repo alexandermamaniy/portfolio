@@ -1,2 +1,2 @@
-docker compose -f docker-compose.staging.yml up certbot
-chown $USER:$USER -R $1/certbot
+docker compose -f $1/docker-compose.staging.yml up certbot
+chmod o+rw -R $1/certbot

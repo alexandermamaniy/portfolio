@@ -90,4 +90,4 @@ jobs:
           END
       - name: Run deploy
         run: |
-          ssh target "cd portfolio/ && docker compose -f docker-compose.staging.yml down && docker pull $DOCKER_REGISTRY_URL/$DOCKER_IMAGE_NAME:latest && docker compose -f docker-compose.staging.yml up -d --force-recreate"
+          ssh target "cd portfolio/ && docker compose -f docker-compose.staging.yml down nginx && docker pull $DOCKER_REGISTRY_URL/$DOCKER_IMAGE_NAME:latest && docker compose -f docker-compose.staging.yml up nginx -d --force-recreate"

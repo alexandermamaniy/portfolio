@@ -17,6 +17,7 @@ services:
       - ./certbot/conf/:/etc/letsencrypt/
   certbot:
     image: certbot/certbot:latest
+    command: certonly --webroot -w /var/www/certbot --keep-until-expiring --email contact@alexandermamani.com -d alexandermamani.com --agree-tos
     volumes:
       - ./certbot/www/:/var/www/certbot/
       - ./certbot/conf/:/etc/letsencrypt/

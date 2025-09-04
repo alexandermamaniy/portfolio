@@ -49,33 +49,32 @@
         </div>
       </div>
       <ul class="navbar-nav ml-auto">
-        <li class="dropdown nav-item" dropdown>
-            <a class="nav-link" >
+            <li class="dropdown nav-item" dropdown>
+                <a class="nav-link" [routerLink]="['presentation']" [fragment]="'about-me'" >
 
-                <i class="tim-icons icon-controller d-lg-none d-xl-none"> </i> About Me
-            </a>
-
-        </li>
+                    <i class="tim-icons icon-controller d-lg-none d-xl-none"> </i> About Me
+                </a>
+            </li>
           <li class="dropdown nav-item" dropdown>
 
-              <a class="nav-link" >
-                  <i  class="tim-icons icon-app"> </i> <p>Projects</p>
-              </a>
-
-
-          </li>
-          <li class="dropdown nav-item" dropdown>
-
-              <a class="nav-link" >
+              <a class="nav-link" [routerLink]="['presentation']" [fragment]="'blogs'">
                   <i  class="tim-icons icon-paper"> </i> <p>Blog</p>
               </a>
 
           </li>
-          <li class="dropdown nav-item" dropdown>
-              <a class="nav-link" >
+
+            <li class="dropdown nav-item" dropdown>
+
+              <a class="nav-link" [routerLink]="['presentation']" [fragment]="'projects'" >
+                  <i  class="tim-icons icon-app"> </i> <p>Projects</p>
+              </a>
+            </li>
+
+            <li class="dropdown nav-item" dropdown>
+              <a class="nav-link" [routerLink]="['presentation']" [fragment]="'contact-me'" >
                   <i class="tim-icons icon-email-85"> </i> <p>Contact Me</p>
               </a>
-          </li>
+            </li>
 
 
 <!--        <li class="nav-item dropdown" dropdown>-->

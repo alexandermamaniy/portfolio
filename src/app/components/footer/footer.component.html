@@ -5,10 +5,10 @@
       <div class="col-md-3 col-6">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/components']"> Home </a>
+            <a class="nav-link" [routerLink]="['presentation']" [fragment]="'about-me'" > About Me </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/landing']"> About Me </a>
+            <a class="nav-link" [routerLink]="['presentation']" [fragment]="'blogs'" > Blog </a>
           </li>
         </ul>
       </div>
@@ -17,17 +17,17 @@
           <li class="nav-item">
             <a
               class="nav-link"
-              href="https://creative-tim.com/contact-us?ref=blkdspa-footer"
+              [routerLink]="['presentation']" [fragment]="'projects'"
             >
-              Contact Me
+              Projects
             </a>
           </li>
           <li class="nav-item">
             <a
               class="nav-link"
-              href="http://creative-tim.com/blog?ref=blkdspa-footer"
+              [routerLink]="['presentation']" [fragment]="'contact-me'"
             >
-              Projects
+              Contact Me
             </a>
           </li>
         </ul>
